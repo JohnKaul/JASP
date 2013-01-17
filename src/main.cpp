@@ -53,7 +53,7 @@ void printLicense()     /*{{{*/
 {
     outs().changeColor(llvm::raw_ostream::RED);
     outs() <<
-        " Copyright (c)2011-2012 John Kaul - john.kaul@live.com\n"
+        " Copyright (c)2011-2013 John Kaul - john7kaul@gmail.com\n"
         " All rights reserved.\n"
         " \n"
         " Redistribution and use in source and binary forms, with or without\n"
