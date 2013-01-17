@@ -136,7 +136,7 @@ std::vector<std::string> parse(std::string l, char delim)   /*{{{*/
 // {
 //    std::string str = ";#set __MYSET__ foo is a good solution";
 //    std::vector<std::string> toks = parse(str, ' ');
-//    for (int i=0; i < toks.size(); i++)
+//    for (unsigned i=0; i < toks.size(); i++)
 //        std::cout << "\nTOKS #" << i << ":" << toks[i] << '\n';
 // }
 {
@@ -264,7 +264,7 @@ void process(std::fstream& input, std::string& infilename, llvm::raw_ostream* ou
             includeFile = trim(includeFile);
             // strip the string of spaces.
 
-            for (unsigned int i=0; i < customIncludeFileLocationStash.size(); ++i)
+            for (unsigned i=0; i < customIncludeFileLocationStash.size(); ++i)
             {
                 std::string testFile;
                 testFile = includeFile;
@@ -278,7 +278,7 @@ void process(std::fstream& input, std::string& infilename, llvm::raw_ostream* ou
             }
 
             bool proc = true;
-            for (unsigned int i=0; i < includeStash.size(); i++)
+            for (unsigned i=0; i < includeStash.size(); i++)
                 if (includeStash[i] == includeFile)
                     proc = false;
 
@@ -325,7 +325,7 @@ void process(std::fstream& input, std::string& infilename, llvm::raw_ostream* ou
             // make sure the string is trimed of extra spaces
 
             bool proc = true;
-            for (unsigned int i=0; i < defineStash.size(); i++)
+            for (unsigned i=0; i < defineStash.size(); i++)
                 if (defineStash[i] == str)
                     proc = false;
 
@@ -356,7 +356,7 @@ void process(std::fstream& input, std::string& infilename, llvm::raw_ostream* ou
             bool proc = true;
             // search the DEFINESTASH to see if definition has been added
 
-            for (unsigned int i=0; i < defineStash.size(); i++)
+            for (unsigned i=0; i < defineStash.size(); i++)
                 if (defineStash[i] == str)
                     proc = false;
 
@@ -413,7 +413,7 @@ void process(std::fstream& input, std::string& infilename, llvm::raw_ostream* ou
          // to replace.
          if (replaceStash.size() > 0 && str != KILLSTRING)
          {
-             for (unsigned int i=0; i < replaceStash.size(); ++i)
+             for (unsigned i=0; i < replaceStash.size(); ++i)
              {
                  std::vector<std::string> toks = parse(replaceStash[i], ' ');
                  std::string SetNameToFind;
