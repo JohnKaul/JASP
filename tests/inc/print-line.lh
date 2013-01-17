@@ -1,0 +1,5 @@
+(defun print-line ( str )
+  ;; print-line
+  ;;
+  (princ (strcat "\n" str))
+ )

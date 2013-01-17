@@ -1,0 +1,6 @@
+;#include licenceheader.lh
+(defun print-string ( str )
+  ;; print-string
+  ;;
+  (princ str)
+ )

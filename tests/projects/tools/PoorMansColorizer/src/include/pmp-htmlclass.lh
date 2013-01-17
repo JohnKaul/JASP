@@ -1,0 +1,6 @@
+;#define ( <span class="Special">(</span>
+;#define ) <span class="Special">)</span>
+;#define defun <span class="Statement">defun</span>
+;#define princ <span class="Statement">princ</span>
+;#define alert <span class="Statement">alert</span>
+;#define ' <span class="lispAtomMark">'</span>
